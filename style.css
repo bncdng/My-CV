@@ -21,11 +21,36 @@ h3 {
 .header {
   padding: 50px 20px;
   text-align: center;
-  background-color: rgb(236, 233, 233);
+  background-color: lightgray;
 }
 
-main {
+.nav-link {
+  padding: 10px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.main {
   max-width: 800px;
   margin: 0 auto;
   padding: 16px;
+}
+
+.main > * + * {
+  margin-top: 50px;
+}
+
+.main > * {
+  border-top: 1px solid black;
+}
+
+.main > *:first-child {
+  border-top: none;
 }
