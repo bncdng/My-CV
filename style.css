@@ -102,3 +102,40 @@ h3 {
   border-radius: 0.0625rem;
   color: black;
 }
+
+/***********************************************************/
+/* Media Queries */
+
+@media screen and (min-width: 786px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hire-me {
+    position: fixed;
+  }
+}
+
+@media print {
+  .hire-me {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .main > * + * {
+    margin-top: 4rem;
+  }
+}
