@@ -40,7 +40,7 @@ h3 {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-color: lightgray;
+  background-image: linear-gradient(black, white);
   position: relative;
 }
 
@@ -50,6 +50,8 @@ h3 {
 
 .main-heading {
   font-size: 1em;
+  color: rgb(210, 208, 208);
+  text-shadow: 2px 2px black;
 }
 
 .profession {
@@ -172,3 +174,17 @@ h3 {
   flex-direction: row;
 }
 
+.footer {
+  margin-top: 3rem;
+  background-image: linear-gradient(white, black);
+  padding: 2rem;
+}
+
+.footer-text {
+  color: rgb(254, 251, 251);
+  text-align: center;
+}
+
+.footer-link {
+  color: rgb(210, 208, 208);
+}
