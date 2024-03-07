@@ -9,11 +9,20 @@ html {
 
 body {
   margin: 0;
+  --text-color: black;
+  --text-shadow: black;
+  --accent-color: white;
+  --accent-bg-color: black;
+  --accent-color-heading: rgb(210, 208, 208);
+  --accent-color-nav-link-hover: gray;
+  --accent-color-badge: salmon;
+  --text-color-footer: rgb(254, 251, 251);
+  --text-color-footer-link: rgb(210, 208, 208);
 }
 
 *::selection {
-  background-color: black;
-  color: white;
+  background-color: var(--accent-bg-color);
+  color: var(--accent-color);
 }
 
 h1,
@@ -33,6 +42,7 @@ h3 {
     font-size: 24px;
   }
 }
+
 /***********************************************************/
 /* Specific Stylings */
 
@@ -50,8 +60,8 @@ h3 {
 
 .main-heading {
   font-size: 1em;
-  color: rgb(210, 208, 208);
-  text-shadow: 2px 2px black;
+  color: var(--accent-color-heading);
+  text-shadow: 2px 2px var(--text-shadow);
 }
 
 .profession {
@@ -87,15 +97,15 @@ h3 {
 
 .nav-link {
   padding: 0.25rem 0.5rem;
-  color: black;
+  color: var(--text-color);
 }
 
 .nav-link:hover {
-  color: gray;
+  color: var(--accent-color-nav-link-hover);
 }
 
 .nav-link:active {
-  color: white;
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -109,10 +119,10 @@ h3 {
   top: 1rem;
   right: 1rem;
   padding: 0.5rem;
-  background-color: salmon;
-  border: 0.25rem solid darkgray;
+  background-color: var(--accent-color-badge);
+  border: 0.25rem solid var(--accent-color-nav-link-hover);
   border-radius: 0.25rem;
-  color: black;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -166,7 +176,7 @@ h3 {
 }
 
 .experience-heading {
-  display: inline-block;
+  display: inline;
 }
 
 .experience-subheading {
@@ -181,10 +191,13 @@ h3 {
 }
 
 .footer-text {
-  color: rgb(254, 251, 251);
+  color: var(--text-color-footer);
   text-align: center;
 }
 
 .footer-link {
-  color: rgb(210, 208, 208);
+  color: var(--text-color-footer-link);
 }
+
+/***********************************************************/
+/* Custom Properties */
