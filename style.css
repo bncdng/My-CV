@@ -9,6 +9,8 @@ html {
 
 body {
   margin: 0;
+  --page-background-color: white;
+  --page-text-color: black;
   --text-color: black;
   --text-shadow: black;
   --accent-color: white;
@@ -50,7 +52,7 @@ h3 {
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   text-align: center;
-  background-image: linear-gradient(black, white);
+  background-image: linear-gradient(var(--text-color), var(--accent-color));
   position: relative;
 }
 
@@ -186,7 +188,7 @@ h3 {
 
 .footer {
   margin-top: 3rem;
-  background-image: linear-gradient(white, black);
+  background-image: linear-gradient(var(--accent-color), var(--text-color));
   padding: 2rem;
 }
 
@@ -200,4 +202,10 @@ h3 {
 }
 
 /***********************************************************/
-/* Custom Properties */
+/* Dark Theme - How does it work?? */
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --page-background-color: black;
+    --page-text-color: white;
+  }
+}
