@@ -1,14 +1,6 @@
 /***********************************************************/
 /* General Stylings */
-
-html {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-
-body {
-  margin: 0;
+:root {
   --page-background-color: white;
   --page-text-color: black;
   --text-color: black;
@@ -20,6 +12,18 @@ body {
   --accent-color-badge: salmon;
   --text-color-footer: rgb(254, 251, 251);
   --text-color-footer-link: rgb(210, 208, 208);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
 }
 
 *::selection {
@@ -211,9 +215,9 @@ h3 {
 
 /***********************************************************/
 /* Dark Theme - How does it work? Why doesn't it work? */
-@media screen and (prefers-color-scheme: dark) {
+/*@media screen and (prefers-color-scheme: dark) {
   body {
     --page-background-color: black;
     --page-text-color: white;
   }
-}
+}*/
