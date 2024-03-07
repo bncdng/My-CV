@@ -100,6 +100,7 @@ h3 {
 .nav-link {
   padding: 0.25rem 0.5rem;
   color: var(--text-color);
+  _transition: color 0.5s;
 }
 
 .nav-link:hover {
@@ -108,6 +109,13 @@ h3 {
 
 .nav-link:active {
   color: var(--accent-color);
+}
+
+.nav-link:focus {
+  color: var(--accent-color-badge);
+  transition: 0.5s ease-in;
+  display: box;
+  box-shadow: 1px 1px 1px 1px;
 }
 
 @media screen and (min-width: 768px) {
@@ -202,7 +210,7 @@ h3 {
 }
 
 /***********************************************************/
-/* Dark Theme - How does it work?? */
+/* Dark Theme - How does it work? Why doesn't it work? */
 @media screen and (prefers-color-scheme: dark) {
   body {
     --page-background-color: black;
