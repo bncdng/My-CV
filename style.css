@@ -137,12 +137,21 @@ h3 {
   border: 0.25rem solid var(--accent-color-nav-link-hover);
   border-radius: 0.25rem;
   color: var(--text-color);
+  opacity: 0.5;
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
 @media screen and (min-width: 992px) {
   .hire-me {
     position: fixed;
   }
+}
+
+.header:hover .hire-me,
+.header:focus-within .hire-me {
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 .main {
